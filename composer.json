@@ -1,10 +1,13 @@
 {
-    "name": "learn-to-code/zero",
-    "description": "Zero Shop",
-    "type": "project",
-    "require-dev": {
-        "codeception/codeception": "^4.1"
-    },
-    "license": "MIT",
-    "require": {}
+  "name": "learn-to-code/zero",
+  "description": "Zero Shop",
+  "type": "project",
+  "require-dev": {
+    "codeception/codeception": "^4.1"
+  },
+  "license": "MIT",
+  "require": {},
+  "scripts": {
+    "test": "codeception run unit"
+  }
 }
