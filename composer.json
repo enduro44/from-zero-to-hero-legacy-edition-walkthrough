@@ -3,11 +3,13 @@
   "description": "Zero Shop",
   "type": "project",
   "require-dev": {
-    "codeception/codeception": "^4.1"
+    "codeception/codeception": "^4.1",
+    "codeception/module-phpbrowser": "^1.0.0",
+    "codeception/module-asserts": "^1.0.0"
   },
   "license": "MIT",
-  "require": {},
+  "require": [],
   "scripts": {
-    "test": "codeception run unit"
+    "test": "codecept run"
   }
 }
