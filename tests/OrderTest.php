@@ -27,4 +27,12 @@ class OrderTest extends \Codeception\Test\Unit
         $this->assertEquals('paid', $order->status);
     }
 
+    public function testExceptionInThrownForUnknownPaymentType()
+    {
+        $order = new Order();
+        $paymentType = 'unknown';
+        $this->expectExceptionMessage(sprintf('Unknown payment type: %s', $paymentType));
+        $order->pay($paymentType, '');
+    }
+
 }
