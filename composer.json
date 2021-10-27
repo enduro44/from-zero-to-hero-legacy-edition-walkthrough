@@ -8,7 +8,6 @@
     "codeception/module-asserts": "^1.0.0"
   },
   "license": "MIT",
-  "require": [],
   "scripts": {
     "test": "codecept run"
   }
