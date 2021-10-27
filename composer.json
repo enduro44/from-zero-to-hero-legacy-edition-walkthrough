@@ -10,5 +10,10 @@
   "license": "MIT",
   "scripts": {
     "test": "codecept run"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app"
+    }
   }
 }
