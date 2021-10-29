@@ -9,7 +9,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "test": "codecept run"
+    "test": "codecept run --coverage --coverage-xml --coverage-html"
   },
   "autoload": {
     "psr-4": {
