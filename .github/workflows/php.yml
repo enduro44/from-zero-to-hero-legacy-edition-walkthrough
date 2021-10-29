@@ -1,4 +1,4 @@
-name: PHP Composer
+name: Code Quality and Tests
 
 on:
   push:
@@ -15,8 +15,9 @@ jobs:
       - uses: actions/checkout@v2
       - uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.0'
+          php-version: '7.4'
           coverage: xdebug
+
       - name: Validate composer.json and composer.lock
         run: composer validate --strict
 
@@ -35,5 +36,5 @@ jobs:
       # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
       # Docs: https://getcomposer.org/doc/articles/scripts.md
       - name: Setup PHP with Xdebug
-        run: composer run-script test
+        run: composer run-script coverage
 
