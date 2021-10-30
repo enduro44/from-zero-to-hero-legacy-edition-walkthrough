@@ -22,7 +22,7 @@ class Order
     {
         $total = 0;
         for ($i = 0; $i < count($this->prices); $i++)
-            $total += $this->quantities[$i] + $this->prices[$i];
+            $total += $this->quantities[$i] * $this->prices[$i];
         return $total;
     }
 
